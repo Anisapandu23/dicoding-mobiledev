@@ -1,5 +1,6 @@
 package com.anisa.camera;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
@@ -18,6 +19,9 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Detail Camera");
 
         ImageView ivBandImage;
         TextView tvBandName, tvBandDetail, tvBandGenre;
